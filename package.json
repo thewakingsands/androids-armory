@@ -6,14 +6,21 @@
     "start": "next start"
   },
   "dependencies": {
+    "@ainou/code-style": "0.0.28",
     "next": "latest",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@types/node": "20.8.10",
+    "@types/eslint": "^8",
+    "@types/node": "16",
     "@types/react": "18.2.33",
     "@types/react-dom": "18.2.14",
-    "typescript": "^5.2.2"
-  }
+    "@typescript-eslint/eslint-plugin": "^6.19.1",
+    "@typescript-eslint/parser": "^6.19.1",
+    "eslint": "^8.56.0",
+    "prettier": "^3.2.4",
+    "typescript": "^5.3.3"
+  },
+  "packageManager": "yarn@4.0.2"
 }
