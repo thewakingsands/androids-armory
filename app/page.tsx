@@ -1,3 +1,10 @@
+import { CrossFadeTile } from '../components/cross-fade-tile'
+
 export default function Page() {
-  return <h1>Hello, Androids' Armory!</h1>
+  return (
+    <main>
+      <h1>Hello, Androids' Armory!</h1>
+      <CrossFadeTile />
+    </main>
+  )
 }
