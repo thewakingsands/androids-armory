@@ -20,7 +20,7 @@ export function AaRootLayout({ children }: { children: React.ReactNode }) {
   const armouryCategoryMenu = [
     { key: 'arm', icon: <ArmouryMainArm className="w-6" />, title: '武器' },
     { key: 'body', icon: <ArmouryBody className="w-6" />, title: '防具' },
-    { key: 'fashion', icon: <AppPaymentSymbol className="w-6" />, title: '时装' },
+    { key: 'mogstation', icon: <AppPaymentSymbol className="w-6" />, title: '时装' },
     { key: 'accessories', icon: <ArmouryRing className="w-6" />, title: '饰品' },
     { key: 'tool', icon: <ItemCategoryCrp className="w-6" />, title: '工具' },
   ]
