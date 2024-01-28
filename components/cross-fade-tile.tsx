@@ -14,11 +14,11 @@ export function CrossFadeTile({
   color: string
 }) {
   return (
-    <Link href="/" className="flex justify-center">
-      <div className="group/tile relative w-48 aspect-[618/1000] text-white">
+    <Link href="/" className="flex justify-center h-unit-72 w-full">
+      <div className="group/tile relative w-full text-white">
         <div className="absolute w-full h-full scale-90" style={{ backgroundColor: color }}></div>
         <div className="group/back absolute w-full h-full opacity-100 group-hover/tile:opacity-0 group-hover/tile:-translate-y-6 transition-all">
-          <div className="w-full h-full flex justify-center items-center">{icon}</div>
+          <div className="w-full h-full flex justify-center items-center *:w-28">{icon}</div>
         </div>
         <div className="group/front absolute w-full h-full opacity-0 group-hover/tile:opacity-100 transition-opacity group-hover/tile:z-10">
           <div className="transition-transform group-hover/tile:translate-y-0 -translate-y-6 h-full pointer-events-none">

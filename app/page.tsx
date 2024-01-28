@@ -125,7 +125,7 @@ export default function Page() {
         { label: '召唤师', abbr: 'smn', icon: <ClassJob027 /> },
         { label: '赤魔法师', abbr: 'rdm', icon: <ClassJob035 /> },
         { label: '青魔法师', abbr: 'blu', icon: <ClassJob036 /> },
-        { label: '绘灵法师', abbr: 'pcm', icon: <FaPaintBrush size={120} /> },
+        { label: '绘灵法师', abbr: 'pcm', icon: <FaPaintBrush size={64} /> },
       ],
     },
   ]
@@ -138,7 +138,7 @@ export default function Page() {
           <h2>{type.label}</h2>
           <div className="flex flex-wrap justify-center gap-4 px-4 overflow-hidden" key={type.label}>
             {type.jobs.map((job) => (
-              <div key={job.abbr}>
+              <div className="flex-1 max-w-44 flex justify-center even:mt-8" key={job.abbr}>
                 <CrossFadeTile
                   label={job.label}
                   icon={job.icon}
@@ -149,11 +149,12 @@ export default function Page() {
                       className="absolute h-full w-auto bg-contain bg-center bg-no-repeat -left-20 -right-20"
                     >
                       <Image
-                        className="object-contain"
+                        className="object-contain hidden group-hover/tile:block"
                         placeholder="data:image/svg+xml,%3Csvg width='96' height='96' viewBox='0 0 96 96' xmlns='http://www.w3.org/2000/svg'%3E%3Cstyle%3E.s%7Banimation:a 1.2s cubic-bezier(0.52,.6,.25,.99) infinite%7D@keyframes a%7B0%25%7Br:0;opacity:1%7D100%25%7Br:11px;opacity:0%7D%7D%3C/style%3E%3Ccircle class='s' cx='48' cy='40' r='0' fill='%23fff'/%3E%3C/svg%3E"
                         src={jobImages[job.abbr]}
                         fill
                         alt={job.label}
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
                       />
                     </div>
                   }
