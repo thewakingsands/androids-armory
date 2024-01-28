@@ -121,7 +121,7 @@ export default function Page() {
       label: '法系',
       color: '#732828',
       jobs: [
-        { label: '黑魔法师', abbr: 'drk', icon: <ClassJob025 /> },
+        { label: '黑魔法师', abbr: 'blm', icon: <ClassJob025 /> },
         { label: '召唤师', abbr: 'smn', icon: <ClassJob027 /> },
         { label: '赤魔法师', abbr: 'rdm', icon: <ClassJob035 /> },
         { label: '青魔法师', abbr: 'blu', icon: <ClassJob036 /> },
