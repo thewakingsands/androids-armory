@@ -6,11 +6,11 @@ import mogstation from '../_images/types/mogstation.png'
 import tool from '../_images/types/tool.png'
 
 export const armouryCategory = [
-  { key: 'main-arm', icon: <ArmouryMainArm className="w-6" />, title: '武器', img: arm },
-  { key: 'body', icon: <ArmouryBody className="w-6" />, title: '防具', img: body },
-  { key: 'mog-station', icon: <AppPaymentSymbol className="w-6" />, title: '时装', img: mogstation },
-  { key: 'accessories', icon: <ArmouryRing className="w-6" />, title: '饰品', img: accessories },
-  { key: 'tool', icon: <ItemCategoryCrp className="w-6" />, title: '工具', img: tool },
+  { key: 'main-arm', icon: <ArmouryMainArm className="w-6" />, title: '武器', img: arm, color: '#726e6d' },
+  { key: 'body', icon: <ArmouryBody className="w-6" />, title: '防具', img: body, color: '#83291e' },
+  { key: 'mog-station', icon: <AppPaymentSymbol className="w-6" />, title: '时装', img: mogstation, color: '#618da8' },
+  { key: 'accessories', icon: <ArmouryRing className="w-6" />, title: '饰品', img: accessories, color: '#cc9145' },
+  { key: 'tool', icon: <ItemCategoryCrp className="w-6" />, title: '工具', img: tool, color: '#7abfa0' },
 ]
 
 export const armouryCategoryRecord: Record<
