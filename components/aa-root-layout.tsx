@@ -15,16 +15,9 @@ import {
 } from '../app/_components/_app-icons'
 import { AALogo } from './aa-logo'
 import { AaNavbarItemTextLink } from './aa-navbar-item-text-link'
+import { armouryCategory } from '../app/_constants/armouryCategory'
 
 export function AaRootLayout({ children }: { children: React.ReactNode }) {
-  const armouryCategoryMenu = [
-    { key: 'main-arm', icon: <ArmouryMainArm className="w-6" />, title: '武器' },
-    { key: 'body', icon: <ArmouryBody className="w-6" />, title: '防具' },
-    { key: 'mog-station', icon: <AppPaymentSymbol className="w-6" />, title: '时装' },
-    { key: 'accessories', icon: <ArmouryRing className="w-6" />, title: '饰品' },
-    { key: 'tool', icon: <ItemCategoryCrp className="w-6" />, title: '工具' },
-  ]
-
   return (
     <div className="aa-root-layout">
       <Navbar className="py-2">
@@ -32,8 +25,8 @@ export function AaRootLayout({ children }: { children: React.ReactNode }) {
           <AALogo />
         </NavbarBrand>
         <NavbarContent className="hidden sm:flex flex-1" justify="center">
-          <AaNavbarItemTextLink title="系列" icon={<FellowActivity18 />} href="/" menu={armouryCategoryMenu} />
-          <AaNavbarItemTextLink title="单品" icon={<AppHomeMenuInventory />} href="/" menu={armouryCategoryMenu} />
+          <AaNavbarItemTextLink title="系列" icon={<FellowActivity18 />} href="/" menu={armouryCategory} />
+          <AaNavbarItemTextLink title="单品" icon={<AppHomeMenuInventory />} href="/" menu={armouryCategory} />
           <AaNavbarItemTextLink title="时尚配饰" icon={<FaUmbrella />} href="/" />
           <AaNavbarItemTextLink title="染剂" icon={<ItemCategoryDye />} href="/" />
           <AaNavbarItemTextLink title="专题" icon={<Market />} href="/" />

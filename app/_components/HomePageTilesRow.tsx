@@ -6,7 +6,7 @@ export function HomePageTilesRow({
   className,
   tiles,
 }: {
-  className: string | Record<string, boolean>
+  className?: string | Record<string, boolean>
   tiles: Array<React.ComponentProps<typeof CrossFadeTile> & { _key: React.Key }>
 }) {
   return (
