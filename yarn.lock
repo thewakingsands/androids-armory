@@ -12,9 +12,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ainou/code-style@npm:0.1.2":
-  version: 0.1.2
-  resolution: "@ainou/code-style@npm:0.1.2"
+"@ainou/code-style@npm:0.1.3":
+  version: 0.1.3
+  resolution: "@ainou/code-style@npm:0.1.3"
   dependencies:
     "@eslint/js": "npm:>=9"
     "@types/node": "npm:>=20"
@@ -28,7 +28,7 @@ __metadata:
     typescript-eslint: "npm:*"
   bin:
     ainou-code-style: src/postinstall.mjs
-  checksum: 215321dabb1e9a75ec1c27ee66761b5cab86dede0857968348ca5bb728648eb7e70889af560f60f2a5fb9c7c91795b11cb7f595bd732d6b2864d91ddb781b1c6
+  checksum: 99b5d600dc96305fb8b8d831d8878caa427e87523cc7bd191abb0f4ddb355036dafd3ed6a61888d01fa88f9056966c56b65fb9e5b753157e81699a21b9a43bc3
   languageName: node
   linkType: hard
 
@@ -7210,7 +7210,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
-    "@ainou/code-style": "npm:0.1.2"
+    "@ainou/code-style": "npm:0.1.3"
     "@nextui-org/react": "npm:^2.4.2"
     "@svgr/cli": "npm:^8.1.0"
     "@types/eslint": "npm:^8.56.10"
